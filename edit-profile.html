@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Scoutmee Web App">
+    <title>ScoutMee</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="globalWrapper">
+        <a href="#" class="backToTop"><i class="icon">&#xf106;</i></a>
+
+        <div class="instructions">
+            <a href="#" class="closeInstructions">x</a>
+
+            <div class="container">
+                <div class="stepOne">
+                    <div class="illustration">
+                        <img src="images/placeholders/step-1.png" alt="Instructions Image">
+                    </div>
+                    <!-- illustration -->
+                    <h3>Step 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error dolores consequatur suscipit perspiciatis, doloremque aspernatur at, ad porro dolorem nobis fuga. Laborum quae adipisci sapiente. Sapiente excepturi eaque beatae.</p>
+                </div>
+                <!-- stepOne -->
+
+                <div class="stepTwo">
+                    <div class="illustration">
+                        <img src="images/placeholders/step-2.png" alt="Instructions Image">
+                    </div>
+                    <!-- illustration -->
+                    <h3>Step 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error dolores consequatur suscipit perspiciatis, doloremque aspernatur at, ad porro dolorem nobis fuga. Laborum quae adipisci sapiente. Sapiente excepturi eaque beatae.</p>
+                </div>
+                <!-- stepOne -->
+
+                <div class="stepThree">
+                    <div class="illustration">
+                        <img src="images/placeholders/step-3.png" alt="Instructions Image">
+                    </div>
+                    <!-- illustration -->
+                    <h3>Step 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa error dolores consequatur suscipit perspiciatis, doloremque aspernatur at, ad porro dolorem nobis fuga. Laborum quae adipisci sapiente. Sapiente excepturi eaque beatae.</p>
+                </div>
+                <!-- stepOne -->
+            </div>
+        </div>
+        <!-- instructions -->
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#" class="openInstructions">How it works</a></li>
+            </ul>
+        </nav>
+        <!-- sideNav -->
+
+        <div class="headerWrapper">
+            <div class="container">
+                <header>
+                    <div class="openMenu">
+	        			<a href="#sideNav" class="openNav"><i class="icon">&#xf0c9;</i></a>
+	        		</div>
+	        		<!-- openMenu -->
+
+                    <div class="logo">
+                        <a href="index.html">Scoutmeem</a>
+                    </div>
+
+                    <div class="rightActions">
+                        <a href="profile-latest.html" class="profileLink">
+                            <img src="images/placeholders/user-avatar-3.jpg" alt="User Avatar">
+                        </a>
+
+                        <a href="profile-inbox.html" class="inboxLink">
+                            <i class="icon">&#xf0e0;</i>
+                            <span>33</span>
+                        </a>
+
+                        <a href="boost-profile.html" class="reverseButton import">
+                            <i class="icon">&#xf019;</i><span>Boost your profile</span>
+                        </a>
+
+                        <a href="#" class="reverseButton"><i class="icon">&#xf002;</i><span>Search</span></a>
+                    </div>
+                    <!-- rightActions -->
+                </header>
+                <!-- header -->
+            </div>
+        </div>
+        <!-- headerWrapper -->
+
+        <div class="profileAddEditWrapper">
+            <div class="container">
+                <div class="borderWrapper">
+                    <div class="tabs">
+                        <header class="sectionHeader">
+                            <h3>Edit Your Profile</h3>
+                        </header>
+                        <!-- sectionHeader -->
+
+                        <ul>
+                            <li><a href="edit-profile.html" class="active"><span>General</span></a></li>
+                            <li><a href="edit-events.html"><span>Events</span></a></li>
+                            <li><a href="edit-settings.html"><span>Settings</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- tabs -->
+
+                    <div class="generalInfo">
+                        <form action="#" data-parsley-validate>
+                            <label class="full">
+                                <span class="label">Name:</span>
+                                <div class="formElement">
+                                    <input type="text" class="full" data-parsley-required="true" data-parsley-maxlength="14">
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <div class="full">
+                                <span class="label">Gender:</span>
+                                <div class="formElement include-error-1">
+                                    <label class="radioInput">
+                                        <input type="radio" name="gender" data-parsley-required="true" data-parsley-errors-container=".include-error-1" data-parsley-error-message="Please choose your gender">
+                                        <span>Male</span>
+                                    </label>
+
+                                    <label class="radioInput">
+                                        <input type="radio" name="gender" data-parsley-required="true" data-parsley-errors-container=".include-error-1" data-parsley-error-message="Please choose your gender">
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- label.full -->
+
+                            <div class="full">
+                                <span class="label">Location:</span>
+                                <div class="formElement">
+                                    <input type="text" class="full" id="location" data-parsley-required="true" data-parsley-error-message="Please choose your location">
+                                </div>
+                            </div>
+                            <!-- label.full -->
+
+                            <label class="full">
+                                <span class="label">Tagline:</span>
+                                <div class="formElement">
+                                    <input type="text" class="full" placeholder="ex: Never give up" data-parsley-maxlength="29">
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <label class="full">
+                                <span class="label">Role:</span>
+                                <div class="formElement include-error-2">
+                                    <select class="full multiValueSelect" multiple="multiple" data-parsley-required="true" data-parsley-errors-container=".include-error-2">
+                                        <option selected="selected">Pianest</option>
+                                        <option selected="selected">Guitarist</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <label class="full">
+                                <span class="label">Genres:</span>
+                                <div class="formElement include-error-3">
+                                    <select class="full multiValueSelect" multiple="multiple" data-parsley-required="true" data-parsley-errors-container=".include-error-3">
+                                        <option>Pop</option>
+                                        <option>Rock and Roll</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <div class="full">
+                                <span class="label">Profile Avatar:</span>
+                                <div class="formElement">
+                                    <label class="uploadAvatar">
+            							<span>Upload Avatar</span>
+            							<input type="file" data-parsley-required="true" data-parsley-error-message="Profile Avatar is required">
+            						</label>
+
+                                    <div class="cropArea hide">
+            							<img src="#" alt="Placeholder" id="profileImage">
+            						</div>
+                                    <!-- cropArea -->
+                                </div>
+                            </div>
+                            <!-- div.full -->
+
+                            <div class="full">
+                                <span class="label">Profile Video:</span>
+                                <div class="formElement">
+                                    <!-- <label class="uploadVideo">
+                                        <span>Upload Video</span>
+                                        <input type="file">
+                                    </label> -->
+
+                                    <a href="#uploadProfileVideo" class="profileVideo buttonDefault" data-effect="mfp-3d-unfold"><i class="icon">&#xf093;</i><span>Upload profile Video</span></a>
+
+                                    <div id="uploadProfileVideo" class="container mfp-with-anim mfp-hide">
+                                        <div class="wrapper">
+                                            <p class="tips"><i class="icon">&#xf05a;</i> BE CATCHY!<br>Users normally watch the first 10’’ of a video - select or edit one that showcase your skills in the very beginning!</p>
+                                            <div class="device">
+                                                <label class="upload">
+                                                    <span><i class="icon">&#xf093;</i>Upload From Your Device</span>
+                                                    <input type="file" class="userProfileVideo">
+                                                </label>
+                                            </div>
+
+                                            <div class="sep">
+                                                <span>or</span>
+                                            </div>
+
+                                            <div class="external">
+                                                <label class="full">
+                                                    <input type="text" class="userProfileVideoLink" placeholder="Add Youtube Video Link ...">
+                                                </label>
+                                            </div>
+
+                                            <label class="full">
+                                                <a href="#" class="buttonDefault insertProfileVideo">Insert</a>
+                                                <!-- <input type="submit" value="Insert" class="buttonDefault"> -->
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- uploadProfileVideo -->
+
+                                    <input type="text" hidden="hidden" class="profileVideoValue" data-parsley-required="true" data-parsley-error-message="Profile video is required">
+                                </div>
+                            </div>
+                            <!-- div.full -->
+
+                            <div class="full">
+                                <span class="label">Profile Background:</span>
+                                <div class="formElement">
+                                    <label class="uploadBackground">
+                                        <span>Upload Background Image</span>
+                                        <input type="file">
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- div.full -->
+
+                            <label class="full">
+                                <span class="label">Profile URL:</span>
+                                <div class="formElement">
+                                    <div class="profileURL">
+                                        <span>scoutmee.com/profile/</span>
+                                        <input type="text" class="full">
+                                    </div>
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <div class="full">
+                                <span class="label">Influenced By:</span>
+                                <div class="formElement">
+                                    <label class="moreFields">
+                                        <input type="text" class="full" placeholder="ex: Micheal Jackson">
+                                        <button class="addMoreFields"><i class="icon">&#xf067;</i></button>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- label.full -->
+
+                            <!-- <label class="full">
+                                <span class="label">Influenced By:</span>
+                                <div class="formElement">
+                                    <select class="tagSelect" multiple="">
+                                        <option>Peter</option>
+                                        <option>Nicolas</option>
+                                        <option>John</option>
+                                        <option>Jack</option>
+                                        <option>Mostafa</option>
+                                    </select>
+                                </div>
+                            </label> -->
+                            <!-- label.full -->
+
+                            <div class="mixed">
+                                <span class="label">Services:</span>
+                                <div class="formElement">
+                                    <div class="service">
+                                        <label class="serviceCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span>Live Performances</span>
+                                        </label>
+                                        <label class="subService">
+                                            <div>
+                                                <span>Name:</span>
+                                                <input name="live_performance_subservice_name[]" type="text">
+                                            </div>
+
+                                            <div class="servicePrice">
+                                                <span>Price:</span>
+                                                <div>
+                                                    <span class="first">$</span>
+                                                    <input name="live_performance_subservice_cost[]" type="text">
+                                                    <span class="last">/ Hour</span>
+                                                </div>
+                                            </div>
+
+                                            <button class="addSubService" data-subServiceName="live_performance"><i class="icon">&#xf067;</i></button>
+                                        </label>
+                                    </div>
+                                    <!-- service -->
+
+                                    <div class="service">
+                                        <label class="serviceCheckbox">
+                                            <input type="checkbox" class="checkbox">
+                                            <span>Music Lessons</span>
+                                        </label>
+                                        <label class="subService">
+                                            <div>
+                                                <span>Name:</span>
+                                                <input name="music_lessons_subservice_name[]" type="text">
+                                            </div>
+
+                                            <div class="servicePrice">
+                                                <span>Price:</span>
+                                                <div>
+                                                    <span class="first">$</span>
+                                                    <input name="music_lessons_subservice_cost[]" type="text">
+                                                    <span class="last">/ Hour</span>
+                                                </div>
+                                            </div>
+
+                                            <button class="addSubService" data-subServiceName="music_lessons"><i class="icon">&#xf067;</i></button>
+                                        </label>
+                                    </div>
+                                    <!-- service -->
+                                </div>
+                            </div>
+                            <!-- mixed -->
+
+                            <label class="full">
+                                <span class="label">Short Bio:</span>
+                                <div class="formElement">
+                                    <textarea id="aboutForm" name="aboutForm">
+
+                                    </textarea>
+                                </div>
+                            </label>
+                            <!-- label.full -->
+
+                            <div class="mixed">
+                                <span class="label">&nbsp;</span>
+                                <div class="formElement">
+                                    <div class="userApprove">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span>Keep me posted with newsletters updates.</span>
+                                        </label>
+                                    </div>
+                                    <!-- userApprove -->
+
+                                    <div class="userApprove">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span>I read and approve to the <a href="#">user agreement</a></span>
+                                        </label>
+                                    </div>
+                                    <!-- userApprove -->
+                                </div>
+                            </div>
+                            <!-- mixed -->
+
+                            <div class="submit">
+                                <input type="submit" value="save" class="buttonDefault">
+                            </div>
+                            <!-- submit -->
+                        </form>
+                    </div>
+                    <!-- generalInfo -->
+                </div>
+                <!-- borderWrapper -->
+            </div>
+        </div>
+        <!-- profileAddEditWrapper -->
+
+        <footer class="mainFooter">
+            <div class="container">
+                <div class="footerSocial">
+                    <ul>
+                        <li><a href="#" class="facebook"><i class="icon">&#xf09a;</i></a></li>
+                        <li><a href="#" class="twitter"><i class="icon">&#xf099;</i></a></li>
+                        <li><a href="#" class="youtube"><i class="icon">&#xf16a;</i></a></li>
+                        <li><a href="#" class="instegram"><i class="icon">&#xf16d;</i></a></li>
+                        <li><a href="#" class="linkedIn"><i class="icon">&#xf0e1;</i></a></li>
+                        <li><a href="#" class="vimeo"><i class="icon">&#xf27d;</i></a></li>
+                    </ul>
+                </div>
+                <!-- footerSocial -->
+
+                <div class="copyRights">
+                    <p>&copy; All rights reserved, 2016 ScoutMee</p>
+                </div>
+                <!-- copyRights -->
+
+                <div class="developmentCompany">
+                    <p class="mobileOnly">Designed &amp; developed By</p>
+                    <a href="http://moselaymd.com" target="_blank">Moselay Media Development</a>
+                    <p>Designed &amp; developed By:</p>
+                </div>
+                <!-- developmentCompany -->
+
+                <div class="footerLinks">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <!-- footerLinks -->
+            </div>
+        </footer>
+        <!-- mainFooter -->
+
+    </div>
+    <!-- globalWrapper -->
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/ckeditor/ckeditor.js" type="text/javascript"></script>
+    <script>
+        var editor = CKEDITOR.replace("aboutForm");
+    </script>
+</body>
+
+</html>
